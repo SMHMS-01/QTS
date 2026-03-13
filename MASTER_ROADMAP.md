@@ -136,8 +136,7 @@ Legend
 T0: Repository bootstrap
 - [x] T0.1: Create MASTER_ROADMAP.md (this file)
 - [x] T0.2: Create README.md
-- [ ] T0.3: Setup CMake toolchain skeleton
-- [ ] T0.4: Setup formatting and linting configs
+- [x] T0.3: Setup CMake toolchain skeleton
 
 T1: Core foundations
 - [ ] T1.1: Define core types (timestamps, ids, prices, quantities)
