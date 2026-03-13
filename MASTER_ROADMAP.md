@@ -139,7 +139,7 @@ T0: Repository bootstrap
 - [x] T0.3: Setup CMake toolchain skeleton
 
 T1: Core foundations
-- [ ] T1.1: Define core types (timestamps, ids, prices, quantities)
+- [x] T1.1: Define core types (timestamps, ids, prices, quantities)
 - [ ] T1.2: Time model and clock abstraction
 - [ ] T1.3: Event bus / dispatcher
 - [ ] T1.4: Threading model and queues
