@@ -15,3 +15,8 @@
   Task: T-002
   Summary: Refine core type naming to include explicit units (Ns, Ticks, Lots).
   Files: src/core/types/types.hpp, VIBE_LOG.md
+- UUID: c8e06e2e-aac9-418e-9a86-78ac565d7eed
+  Date: 2026-03-14
+  Task: T-003
+  Summary: Add time model and clock abstraction interfaces.
+  Files: src/core/time/time.hpp, src/core/time/clock.hpp, MASTER_ROADMAP.md
