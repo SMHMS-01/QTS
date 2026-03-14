@@ -10,3 +10,8 @@
   Task: T-002
   Summary: Add core types definitions (timestamps, ids, prices, quantities).
   Files: src/core/types/types.hpp, MASTER_ROADMAP.md
+- UUID: 501daa74-61a5-463e-9397-f5c112d1d916
+  Date: 2026-03-14
+  Task: T-002
+  Summary: Refine core type naming to include explicit units (Ns, Ticks, Lots).
+  Files: src/core/types/types.hpp, VIBE_LOG.md

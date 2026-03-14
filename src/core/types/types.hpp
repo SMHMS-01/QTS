@@ -4,15 +4,15 @@
 
 namespace core::types {
 
-struct Timestamp {
+struct TimestampNs {
   std::int64_t value = 0; // nanoseconds since epoch or session start
 };
 
-struct Price {
+struct PriceTicks {
   std::int64_t value = 0; // price in ticks
 };
 
-struct Quantity {
+struct QuantityLots {
   std::int64_t value = 0; // quantity in lots or units
 };
 
@@ -28,23 +28,23 @@ struct SymbolId {
   std::uint32_t value = 0;
 };
 
-inline constexpr bool operator==(Timestamp a, Timestamp b) { return a.value == b.value; }
-inline constexpr bool operator==(Price a, Price b) { return a.value == b.value; }
-inline constexpr bool operator==(Quantity a, Quantity b) { return a.value == b.value; }
+inline constexpr bool operator==(TimestampNs a, TimestampNs b) { return a.value == b.value; }
+inline constexpr bool operator==(PriceTicks a, PriceTicks b) { return a.value == b.value; }
+inline constexpr bool operator==(QuantityLots a, QuantityLots b) { return a.value == b.value; }
 inline constexpr bool operator==(OrderId a, OrderId b) { return a.value == b.value; }
 inline constexpr bool operator==(TradeId a, TradeId b) { return a.value == b.value; }
 inline constexpr bool operator==(SymbolId a, SymbolId b) { return a.value == b.value; }
 
-inline constexpr bool operator<(Timestamp a, Timestamp b) { return a.value < b.value; }
-inline constexpr bool operator<(Price a, Price b) { return a.value < b.value; }
-inline constexpr bool operator<(Quantity a, Quantity b) { return a.value < b.value; }
+inline constexpr bool operator<(TimestampNs a, TimestampNs b) { return a.value < b.value; }
+inline constexpr bool operator<(PriceTicks a, PriceTicks b) { return a.value < b.value; }
+inline constexpr bool operator<(QuantityLots a, QuantityLots b) { return a.value < b.value; }
 inline constexpr bool operator<(OrderId a, OrderId b) { return a.value < b.value; }
 inline constexpr bool operator<(TradeId a, TradeId b) { return a.value < b.value; }
 inline constexpr bool operator<(SymbolId a, SymbolId b) { return a.value < b.value; }
 
-inline constexpr Price operator+(Price a, Price b) { return Price{a.value + b.value}; }
-inline constexpr Price operator-(Price a, Price b) { return Price{a.value - b.value}; }
-inline constexpr Quantity operator+(Quantity a, Quantity b) { return Quantity{a.value + b.value}; }
-inline constexpr Quantity operator-(Quantity a, Quantity b) { return Quantity{a.value - b.value}; }
+inline constexpr PriceTicks operator+(PriceTicks a, PriceTicks b) { return PriceTicks{a.value + b.value}; }
+inline constexpr PriceTicks operator-(PriceTicks a, PriceTicks b) { return PriceTicks{a.value - b.value}; }
+inline constexpr QuantityLots operator+(QuantityLots a, QuantityLots b) { return QuantityLots{a.value + b.value}; }
+inline constexpr QuantityLots operator-(QuantityLots a, QuantityLots b) { return QuantityLots{a.value - b.value}; }
 
 } // namespace core::types
