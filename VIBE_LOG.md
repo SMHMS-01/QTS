@@ -40,3 +40,8 @@
   Task: T-007
   Summary: Add normalization layer interfaces and sequence guard.
   Files: src/market/normalization/symbol_map.hpp, src/market/normalization/sequence_guard.hpp, src/market/normalization/normalization.hpp, MASTER_ROADMAP.md
+- UUID: f4c3c7d5-c5f5-451f-847f-a7d734863b48
+  Date: 2026-03-14
+  Task: T-008
+  Summary: Add replay source interface and controller skeleton.
+  Files: src/market/feed/replay.hpp, src/backtest/replay_controller.hpp, MASTER_ROADMAP.md
