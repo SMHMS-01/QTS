@@ -25,3 +25,8 @@
   Task: T-004
   Summary: Add event bus interfaces (event types, sink interface, bus skeleton).
   Files: src/core/bus/event.hpp, src/core/bus/event_bus.hpp, MASTER_ROADMAP.md
+- UUID: f01e3b0d-49fb-4483-b244-981c4c23a8b9
+  Date: 2026-03-14
+  Task: T-005
+  Summary: Add threading model enum and queue interface skeleton.
+  Files: src/core/threading/threading.hpp, src/core/threading/queue.hpp, MASTER_ROADMAP.md

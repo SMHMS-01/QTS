@@ -142,7 +142,7 @@ T1: Core foundations
 - [x] T1.1: Define core types (timestamps, ids, prices, quantities)
 - [x] T1.2: Time model and clock abstraction
 - [x] T1.3: Event bus / dispatcher
-- [ ] T1.4: Threading model and queues
+- [x] T1.4: Threading model and queues
 
 T2: Market data ingestion
 - [ ] T2.1: Feed schema definitions
