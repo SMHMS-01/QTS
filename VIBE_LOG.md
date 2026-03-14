@@ -20,3 +20,8 @@
   Task: T-003
   Summary: Add time model and clock abstraction interfaces.
   Files: src/core/time/time.hpp, src/core/time/clock.hpp, MASTER_ROADMAP.md
+- UUID: c8543e51-dbb1-4c2d-a243-7a1259223b6b
+  Date: 2026-03-14
+  Task: T-004
+  Summary: Add event bus interfaces (event types, sink interface, bus skeleton).
+  Files: src/core/bus/event.hpp, src/core/bus/event_bus.hpp, MASTER_ROADMAP.md
