@@ -35,3 +35,8 @@
   Task: T-006
   Summary: Define neutral feed schema types for order book and trades.
   Files: src/market/feed/schema.hpp, MASTER_ROADMAP.md
+- UUID: 8bbed551-b69f-4bc3-aaed-f47eecca1167
+  Date: 2026-03-14
+  Task: T-007
+  Summary: Add normalization layer interfaces and sequence guard.
+  Files: src/market/normalization/symbol_map.hpp, src/market/normalization/sequence_guard.hpp, src/market/normalization/normalization.hpp, MASTER_ROADMAP.md

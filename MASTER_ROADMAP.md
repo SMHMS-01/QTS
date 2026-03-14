@@ -146,7 +146,7 @@ T1: Core foundations
 
 T2: Market data ingestion
 - [x] T2.1: Feed schema definitions
-- [ ] T2.2: Normalization layer
+- [x] T2.2: Normalization layer
 - [ ] T2.3: Replay framework
 
 T3: Order book (current focus)
