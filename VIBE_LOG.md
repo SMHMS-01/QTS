@@ -30,3 +30,8 @@
   Task: T-005
   Summary: Add threading model enum and queue interface skeleton.
   Files: src/core/threading/threading.hpp, src/core/threading/queue.hpp, MASTER_ROADMAP.md
+- UUID: d95fde34-2736-4c4a-87e9-54937095c8b6
+  Date: 2026-03-14
+  Task: T-006
+  Summary: Define neutral feed schema types for order book and trades.
+  Files: src/market/feed/schema.hpp, MASTER_ROADMAP.md

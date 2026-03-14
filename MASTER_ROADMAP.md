@@ -145,7 +145,7 @@ T1: Core foundations
 - [x] T1.4: Threading model and queues
 
 T2: Market data ingestion
-- [ ] T2.1: Feed schema definitions
+- [x] T2.1: Feed schema definitions
 - [ ] T2.2: Normalization layer
 - [ ] T2.3: Replay framework
 
