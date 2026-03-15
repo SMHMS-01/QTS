@@ -45,3 +45,8 @@
   Task: T-008
   Summary: Add replay source interface and controller skeleton.
   Files: src/market/feed/replay.hpp, src/backtest/replay_controller.hpp, MASTER_ROADMAP.md
+- UUID: 265f2381-67fa-489b-8f5d-e3bdc6d1f982
+  Date: 2026-03-15
+  Task: T-009
+  Summary: Add order book requirements specification.
+  Files: docs/order_book_requirements.md, MASTER_ROADMAP.md

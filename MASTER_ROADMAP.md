@@ -150,7 +150,7 @@ T2: Market data ingestion
 - [x] T2.3: Replay framework
 
 T3: Order book (current focus)
-- [ ] T3.1: Order book requirements spec
+- [x] T3.1: Order book requirements spec
 - [ ] T3.2: Data structures and complexity goals
 - [ ] T3.3: Apply incremental updates
 - [ ] T3.4: Snapshot load/save
