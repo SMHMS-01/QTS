@@ -160,7 +160,7 @@ T3: Order book (current focus)
 T4: Strategy engine
 - [x] T4.1: Signal interface
 - [x] T4.2: Portfolio model
-- [ ] T4.3: Strategy runner
+- [x] T4.3: Strategy runner
 
 T5: Risk engine
 - [ ] T5.1: Pre-trade checks

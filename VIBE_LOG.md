@@ -85,3 +85,8 @@
   Task: T-016
   Summary: Add portfolio model interface and position type.
   Files: src/strategy/portfolio.hpp, MASTER_ROADMAP.md
+- UUID: d61cbc13-64b3-4266-8394-37fb9988c86d
+  Date: 2026-03-15
+  Task: T-017
+  Summary: Add strategy runner skeleton.
+  Files: src/strategy/runner.hpp, MASTER_ROADMAP.md
