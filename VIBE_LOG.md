@@ -75,3 +75,8 @@
   Task: T-014
   Summary: Add order book deterministic test specification.
   Files: docs/order_book_tests.md, MASTER_ROADMAP.md
+- UUID: cf8fc657-431a-4991-9302-220e297e62c1
+  Date: 2026-03-15
+  Task: T-015
+  Summary: Add strategy signal and interface definitions.
+  Files: src/strategy/signal.hpp, src/strategy/strategy.hpp, MASTER_ROADMAP.md

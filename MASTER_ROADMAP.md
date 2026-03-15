@@ -158,7 +158,7 @@ T3: Order book (current focus)
 - [x] T3.6: Deterministic tests
 
 T4: Strategy engine
-- [ ] T4.1: Signal interface
+- [x] T4.1: Signal interface
 - [ ] T4.2: Portfolio model
 - [ ] T4.3: Strategy runner
 
