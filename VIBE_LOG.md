@@ -80,3 +80,8 @@
   Task: T-015
   Summary: Add strategy signal and interface definitions.
   Files: src/strategy/signal.hpp, src/strategy/strategy.hpp, MASTER_ROADMAP.md
+- UUID: cbcbeb1d-7d37-462c-9472-0da0efef9eae
+  Date: 2026-03-15
+  Task: T-016
+  Summary: Add portfolio model interface and position type.
+  Files: src/strategy/portfolio.hpp, MASTER_ROADMAP.md
