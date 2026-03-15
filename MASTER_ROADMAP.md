@@ -163,7 +163,7 @@ T4: Strategy engine
 - [x] T4.3: Strategy runner
 
 T5: Risk engine
-- [ ] T5.1: Pre-trade checks
+- [x] T5.1: Pre-trade checks
 - [ ] T5.2: Post-trade limits
 
 T6: Execution

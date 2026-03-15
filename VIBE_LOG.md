@@ -90,3 +90,8 @@
   Task: T-017
   Summary: Add strategy runner skeleton.
   Files: src/strategy/runner.hpp, MASTER_ROADMAP.md
+- UUID: d0904500-41f5-4840-96e3-ca73e1c01a5e
+  Date: 2026-03-15
+  Task: T-018
+  Summary: Add risk engine interface and pre-trade check types.
+  Files: src/risk/risk.hpp, MASTER_ROADMAP.md
