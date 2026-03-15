@@ -100,3 +100,8 @@
   Task: T-019
   Summary: Add post-trade limits interface and types.
   Files: src/risk/limits.hpp, MASTER_ROADMAP.md
+- UUID: 1f375501-0fcd-4112-9daf-9de8cafbcd0a
+  Date: 2026-03-15
+  Task: T-020
+  Summary: Add order manager interface and order types.
+  Files: src/execution/order_manager.hpp, MASTER_ROADMAP.md

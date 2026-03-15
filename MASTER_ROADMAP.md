@@ -167,7 +167,7 @@ T5: Risk engine
 - [x] T5.2: Post-trade limits
 
 T6: Execution
-- [ ] T6.1: Order manager
+- [x] T6.1: Order manager
 - [ ] T6.2: Broker adaptor interface
 
 T7: Backtest and simulation
