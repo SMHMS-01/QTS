@@ -55,3 +55,8 @@
   Task: T-010
   Summary: Add order book data structures and complexity goals specification.
   Files: docs/order_book_data_structures.md, MASTER_ROADMAP.md
+- UUID: 682fe6be-7c9d-486e-96a1-90b53b823c0f
+  Date: 2026-03-15
+  Task: T-011
+  Summary: Add order book incremental update semantics.
+  Files: docs/order_book_updates.md, MASTER_ROADMAP.md

@@ -152,7 +152,7 @@ T2: Market data ingestion
 T3: Order book (current focus)
 - [x] T3.1: Order book requirements spec
 - [x] T3.2: Data structures and complexity goals
-- [ ] T3.3: Apply incremental updates
+- [x] T3.3: Apply incremental updates
 - [ ] T3.4: Snapshot load/save
 - [ ] T3.5: Query API (top of book, depth, imbalance)
 - [ ] T3.6: Deterministic tests
