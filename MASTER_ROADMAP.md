@@ -155,7 +155,7 @@ T3: Order book (current focus)
 - [x] T3.3: Apply incremental updates
 - [x] T3.4: Snapshot load/save
 - [x] T3.5: Query API (top of book, depth, imbalance)
-- [ ] T3.6: Deterministic tests
+- [x] T3.6: Deterministic tests
 
 T4: Strategy engine
 - [ ] T4.1: Signal interface

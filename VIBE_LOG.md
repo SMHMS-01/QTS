@@ -70,3 +70,8 @@
   Task: T-013
   Summary: Add order book query API specification.
   Files: docs/order_book_query_api.md, MASTER_ROADMAP.md
+- UUID: 4f344a23-35f3-4f2a-9492-5904da02ccfa
+  Date: 2026-03-15
+  Task: T-014
+  Summary: Add order book deterministic test specification.
+  Files: docs/order_book_tests.md, MASTER_ROADMAP.md
