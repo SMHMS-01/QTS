@@ -65,3 +65,8 @@
   Task: T-012
   Summary: Add order book snapshot load/save specification.
   Files: docs/order_book_snapshots.md, MASTER_ROADMAP.md
+- UUID: edd26ec2-42d2-4257-8322-1b4ac43ac08d
+  Date: 2026-03-15
+  Task: T-013
+  Summary: Add order book query API specification.
+  Files: docs/order_book_query_api.md, MASTER_ROADMAP.md
