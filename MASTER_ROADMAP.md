@@ -164,7 +164,7 @@ T4: Strategy engine
 
 T5: Risk engine
 - [x] T5.1: Pre-trade checks
-- [ ] T5.2: Post-trade limits
+- [x] T5.2: Post-trade limits
 
 T6: Execution
 - [ ] T6.1: Order manager

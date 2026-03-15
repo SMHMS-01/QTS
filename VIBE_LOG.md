@@ -95,3 +95,8 @@
   Task: T-018
   Summary: Add risk engine interface and pre-trade check types.
   Files: src/risk/risk.hpp, MASTER_ROADMAP.md
+- UUID: 604b8b7d-0f66-4797-92e2-b4b5cc1fb032
+  Date: 2026-03-15
+  Task: T-019
+  Summary: Add post-trade limits interface and types.
+  Files: src/risk/limits.hpp, MASTER_ROADMAP.md
