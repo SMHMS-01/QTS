@@ -60,3 +60,8 @@
   Task: T-011
   Summary: Add order book incremental update semantics.
   Files: docs/order_book_updates.md, MASTER_ROADMAP.md
+- UUID: e4710848-762e-4abe-a8d2-5888d6d4c15f
+  Date: 2026-03-15
+  Task: T-012
+  Summary: Add order book snapshot load/save specification.
+  Files: docs/order_book_snapshots.md, MASTER_ROADMAP.md
