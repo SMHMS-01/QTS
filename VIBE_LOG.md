@@ -50,3 +50,8 @@
   Task: T-009
   Summary: Add order book requirements specification.
   Files: docs/order_book_requirements.md, MASTER_ROADMAP.md
+- UUID: acae32cb-e56e-48b6-a2de-802813661a3c
+  Date: 2026-03-15
+  Task: T-010
+  Summary: Add order book data structures and complexity goals specification.
+  Files: docs/order_book_data_structures.md, MASTER_ROADMAP.md
