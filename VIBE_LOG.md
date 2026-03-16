@@ -110,3 +110,8 @@
   Task: T-021
   Summary: Add broker adaptor interface.
   Files: src/execution/broker_adaptor.hpp, MASTER_ROADMAP.md
+- UUID: ebd3cd5b-1c96-4687-8132-6bd9b57e53db
+  Date: 2026-03-16
+  Task: T-022
+  Summary: Add deterministic clock interface and implementation roadmap file.
+  Files: src/backtest/deterministic_clock.hpp, MASTER_ROADMAP_IMPL.md
