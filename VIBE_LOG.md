@@ -235,3 +235,8 @@
   Task: T-046
   Summary: Wire payload flow, sequence guard, and assertions in e2e demo.
   Files: src/app/e2e_demo.cpp
+- UUID: d5b26399-6baa-41b7-89d2-f3edc88b29fb
+  Date: 2026-03-16
+  Task: T-047
+  Summary: Use event sequence for SequenceGuard, add gap case, and harden e2e demo.
+  Files: src/core/bus/event.hpp, src/backtest/replay_engine.cpp, src/backtest/replay_controller.cpp, src/app/e2e_demo.cpp

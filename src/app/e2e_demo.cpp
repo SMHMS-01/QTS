@@ -29,7 +29,7 @@ public:
     if (index_ >= total_) {
       return false;
     }
-    header_.sequence = static_cast<std::uint64_t>(index_ + 1);
+    header_.sequence = sequences_[index_];
     header_.exchange_time.ts.value = header_.sequence;
     header_.receive_time.ts.value = header_.sequence;
     ++index_;
@@ -53,17 +53,18 @@ private:
       {market::order_book::Side::Ask, {102}, {3}},
       {market::order_book::Side::Bid, {100}, {0}},
   };
+  std::uint64_t sequences_[5] = {1, 2, 4, 5, 6};
 };
 
 class OrderBookSink final : public core::bus::IEventSink {
 public:
-  explicit OrderBookSink(market::normalization::SequenceGuard* guard) : guard_(guard) {}
+  explicit OrderBookSink(market::normalization::SequenceGuard* guard) : guard_(guard) {
+    assert(guard_ != nullptr);
+  }
 
   void on_event(const core::bus::Event& e) override {
-    if (guard_) {
-      if (!guard_->accept(e.time.ts.value)) {
-        return;
-      }
+    if (!guard_->accept(e.sequence)) {
+      return;
     }
     const auto* msg = static_cast<const BookUpdateMsg*>(e.payload);
     if (!msg) {
@@ -103,8 +104,8 @@ int main() {
   std::cout << "E2E demo finished. Steps=" << steps << "\n";
   std::cout << "Best Bid: " << bid.price.value << " x " << bid.quantity.value << "\n";
   std::cout << "Best Ask: " << ask.price.value << " x " << ask.quantity.value << "\n";
-  assert(bid.price.value == 99);
-  assert(bid.quantity.value == 5);
+  assert(bid.price.value == 100);
+  assert(bid.quantity.value == 10);
   assert(ask.price.value == 101);
   assert(ask.quantity.value == 7);
 

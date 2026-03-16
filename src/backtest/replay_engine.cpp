@@ -18,6 +18,7 @@ bool ReplayEngine::step() {
   core::bus::Event event{};
   if (const auto* header = source_->peek_header()) {
     event.time = header->receive_time;
+    event.sequence = header->sequence;
   }
   event.type = core::bus::EventType::MarketData;
   event.payload = const_cast<void*>(source_->payload());

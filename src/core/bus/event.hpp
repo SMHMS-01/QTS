@@ -17,6 +17,7 @@ enum class EventType : std::uint8_t {
 struct Event {
   core::time::TimePoint time;
   EventType type = EventType::Control;
+  std::uint64_t sequence = 0;
   void* payload = nullptr;
 };
 
