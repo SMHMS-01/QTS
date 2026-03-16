@@ -168,7 +168,7 @@ T5: Risk engine
 
 T6: Execution
 - [x] T6.1: Order manager
-- [ ] T6.2: Broker adaptor interface
+- [x] T6.2: Broker adaptor interface
 
 T7: Backtest and simulation
 - [ ] T7.1: Deterministic clock

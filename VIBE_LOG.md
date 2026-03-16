@@ -105,3 +105,8 @@
   Task: T-020
   Summary: Add order manager interface and order types.
   Files: src/execution/order_manager.hpp, MASTER_ROADMAP.md
+- UUID: df398e09-f64c-45da-aef9-82d7ab69648a
+  Date: 2026-03-16
+  Task: T-021
+  Summary: Add broker adaptor interface.
+  Files: src/execution/broker_adaptor.hpp, MASTER_ROADMAP.md
