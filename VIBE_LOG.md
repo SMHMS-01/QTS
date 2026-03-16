@@ -245,3 +245,8 @@
   Task: T-048
   Summary: Enforce strict sequence continuity in SequenceGuard.
   Files: src/market/normalization/sequence_guard.hpp
+- UUID: 6096d223-277a-4ea4-93be-ac577af9baac
+  Date: 2026-03-16
+  Task: T-049
+  Summary: Document SequenceGuard assumption and harden DummySource bounds.
+  Files: src/app/e2e_demo.cpp

@@ -21,12 +21,12 @@ struct BookUpdateMsg {
 
 class DummySource final : public market::feed::ReplaySource {
 public:
-  explicit DummySource(int total) : total_(total) {}
+  DummySource() = default;
 
   const market::feed::FeedHeader* peek_header() const override { return &header_; }
 
   bool next() override {
-    if (index_ >= total_) {
+    if (index_ >= static_cast<int>(std::size(msgs_))) {
       return false;
     }
     header_.sequence = sequences_[index_];
@@ -43,7 +43,6 @@ public:
   }
 
 private:
-  int total_ = 0;
   int index_ = 0;
   mutable market::feed::FeedHeader header_{};
   BookUpdateMsg msgs_[5] = {
@@ -63,6 +62,8 @@ public:
   }
 
   void on_event(const core::bus::Event& e) override {
+    // SequenceGuard behavior: after a gap, all subsequent updates are rejected
+    // until an explicit reset (Strategy A).
     if (!guard_->accept(e.sequence)) {
       return;
     }
@@ -84,7 +85,7 @@ int main() {
   backtest::DeterministicClock clock({});
   core::bus::EventBus bus;
 
-  DummySource source(5);
+  DummySource source;
   backtest::ReplayEngine engine(&clock, &source, &bus);
 
   OrderBookSink book_sink(&guard);
