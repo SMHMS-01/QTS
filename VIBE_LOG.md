@@ -120,3 +120,8 @@
   Task: T-023
   Summary: Add event-driven replay engine skeleton.
   Files: src/backtest/replay_engine.hpp, MASTER_ROADMAP_IMPL.md
+- UUID: 9ff1b0fd-dc89-4a4f-89da-7e739b798760
+  Date: 2026-03-16
+  Task: T-024
+  Summary: Add event-driven replay engine skeleton.
+  Files: src/backtest/replay_engine.hpp, MASTER_ROADMAP.md

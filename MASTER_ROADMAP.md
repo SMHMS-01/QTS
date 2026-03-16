@@ -171,8 +171,8 @@ T6: Execution
 - [x] T6.2: Broker adaptor interface
 
 T7: Backtest and simulation
-- [ ] T7.1: Deterministic clock
-- [ ] T7.2: Event-driven replay
+- [x] T7.1: Deterministic clock
+- [x] T7.2: Event-driven replay
 - [ ] T7.3: PnL and metrics
 
 T8: Observability
