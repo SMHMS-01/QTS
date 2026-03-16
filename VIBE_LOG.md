@@ -140,3 +140,8 @@
   Task: T-027
   Summary: Add metrics interface.
   Files: src/observability/metrics.hpp, MASTER_ROADMAP.md
+- UUID: b60b46c0-6579-4b95-af1b-9bf25e3b60b2
+  Date: 2026-03-16
+  Task: T-028
+  Summary: Add tracing interface.
+  Files: src/observability/tracing.hpp, MASTER_ROADMAP.md
