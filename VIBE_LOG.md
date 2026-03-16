@@ -130,3 +130,8 @@
   Task: T-025
   Summary: Add PnL and metrics interface.
   Files: src/backtest/pnl.hpp, MASTER_ROADMAP.md
+- UUID: e295262f-0634-4b92-8b66-53d2ca3bb49e
+  Date: 2026-03-16
+  Task: T-026
+  Summary: Add logging interface.
+  Files: src/observability/logging.hpp, MASTER_ROADMAP.md

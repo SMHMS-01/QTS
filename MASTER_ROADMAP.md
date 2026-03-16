@@ -176,7 +176,7 @@ T7: Backtest and simulation
 - [x] T7.3: PnL and metrics
 
 T8: Observability
-- [ ] T8.1: Logging
+- [x] T8.1: Logging
 - [ ] T8.2: Metrics
 - [ ] T8.3: Tracing
 
