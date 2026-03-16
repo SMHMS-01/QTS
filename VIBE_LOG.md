@@ -170,3 +170,8 @@
   Task: T-033
   Summary: Add architecture/decisions docs and update README references.
   Files: docs/architecture.md, docs/decisions.md, README.md, MASTER_ROADMAP_IMPL.md
+- UUID: 2ec87ac0-8429-4bf9-ae6c-cd5093503b9f
+  Date: 2026-03-16
+  Task: T-034
+  Summary: Implement minimal backtest replay logic and build targets with a basic test.
+  Files: src/core/bus/event_bus.cpp, src/core/CMakeLists.txt, src/backtest/replay_engine.cpp, src/backtest/replay_engine.hpp, src/backtest/replay_controller.cpp, src/backtest/replay_controller.hpp, src/backtest/CMakeLists.txt, src/CMakeLists.txt, tests/unit/backtest_replay_tests.cpp, tests/CMakeLists.txt, MASTER_ROADMAP_IMPL.md

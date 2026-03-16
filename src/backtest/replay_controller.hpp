@@ -14,6 +14,8 @@ public:
   void configure(const market::feed::ReplayConfig& cfg) { config_ = cfg; }
   bool step();
 
+  void set_source(market::feed::ReplaySource* source) { source_ = source; }
+
 private:
   core::time::SimClock* clock_ = nullptr;
   core::bus::EventBus* bus_ = nullptr;
