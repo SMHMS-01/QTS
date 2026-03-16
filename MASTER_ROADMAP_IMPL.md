@@ -40,7 +40,7 @@ Findings (Details)
 Implementation Checklist
 - [!] Order book implementation (L2/L3, updates, snapshot, query)
 - [!] Backtest replay logic (deterministic clock integration)
-- [ ] Execution implementation (order manager, broker adaptor)
+- [!] Execution implementation (order manager, broker adaptor)
 - [ ] Risk implementation (pre-trade, post-trade)
 - [ ] Observability backend (logging, metrics, tracing)
 - [ ] Storage persistence backend

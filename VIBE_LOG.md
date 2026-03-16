@@ -175,3 +175,8 @@
   Task: T-034
   Summary: Implement minimal backtest replay logic and build targets with a basic test.
   Files: src/core/bus/event_bus.cpp, src/core/CMakeLists.txt, src/backtest/replay_engine.cpp, src/backtest/replay_engine.hpp, src/backtest/replay_controller.cpp, src/backtest/replay_controller.hpp, src/backtest/CMakeLists.txt, src/CMakeLists.txt, tests/unit/backtest_replay_tests.cpp, tests/CMakeLists.txt, MASTER_ROADMAP_IMPL.md
+- UUID: ffe5ee1d-b98d-4b07-b03e-990d8607a2b3
+  Date: 2026-03-16
+  Task: T-035
+  Summary: Add minimal execution implementations and build/test targets.
+  Files: src/execution/order_manager.cpp, src/execution/broker_adaptor.cpp, src/execution/CMakeLists.txt, src/CMakeLists.txt, tests/unit/execution_tests.cpp, tests/CMakeLists.txt, MASTER_ROADMAP_IMPL.md
