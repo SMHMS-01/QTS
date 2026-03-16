@@ -240,3 +240,8 @@
   Task: T-047
   Summary: Use event sequence for SequenceGuard, add gap case, and harden e2e demo.
   Files: src/core/bus/event.hpp, src/backtest/replay_engine.cpp, src/backtest/replay_controller.cpp, src/app/e2e_demo.cpp
+- UUID: d2b480ce-27da-4516-ad8f-e913b64ebc37
+  Date: 2026-03-16
+  Task: T-048
+  Summary: Enforce strict sequence continuity in SequenceGuard.
+  Files: src/market/normalization/sequence_guard.hpp

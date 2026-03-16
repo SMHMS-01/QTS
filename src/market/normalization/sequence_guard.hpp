@@ -10,6 +10,9 @@ public:
     if (seq <= last_) {
       return false;
     }
+    if (last_ != 0 && seq != last_ + 1) {
+      return false;
+    }
     last_ = seq;
     return true;
   }
