@@ -1,6 +1,7 @@
 #pragma once
 
 #include "core/bus/event.hpp"
+#include "core/bus/event_bus.hpp"
 #include "backtest/deterministic_clock.hpp"
 #include "market/feed/replay.hpp"
 

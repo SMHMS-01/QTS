@@ -195,3 +195,8 @@
   Task: T-038
   Summary: Add minimal storage persistence implementation and build/test targets.
   Files: src/storage/snapshot_store.cpp, src/storage/CMakeLists.txt, src/CMakeLists.txt, tests/unit/storage_tests.cpp, tests/CMakeLists.txt, MASTER_ROADMAP_IMPL.md
+- UUID: 776b7010-6211-4b3c-8649-9aefa3aa7377
+  Date: 2026-03-16
+  Task: T-039
+  Summary: Fix include dependencies and verify build/tests; update implementation findings.
+  Files: src/backtest/replay_engine.hpp, src/backtest/replay_controller.hpp, src/strategy/runner.hpp, src/core/CMakeLists.txt, src/market/order_book/CMakeLists.txt, src/backtest/CMakeLists.txt, src/execution/CMakeLists.txt, src/risk/CMakeLists.txt, src/observability/CMakeLists.txt, src/storage/CMakeLists.txt, tests/CMakeLists.txt, MASTER_ROADMAP_IMPL.md

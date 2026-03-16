@@ -19,23 +19,23 @@ Review Scope
 - Check that at least one test exists for critical paths.
 
 Findings (High-Level)
-- Order book core is still interface-only; no executable core exists.
-- Backtest and replay are skeletons with no functional logic.
-- Execution and risk are interface-only with no concrete behavior.
-- Observability is interface-only.
-- Storage is schema-only; no persistence implementation.
-- Build system has no concrete targets beyond interfaces.
-- Architecture and decision documents are missing.
+- Order book core has minimal L2 implementation; L3 and full update/query coverage are not complete.
+- Backtest replay has minimal logic and passes basic tests; not feature-complete.
+- Execution and risk have minimal in-memory implementations; behavior is not production-ready.
+- Observability has minimal in-process implementations; no external backend integration.
+- Storage has in-memory snapshot persistence only; no durable storage.
+- Build system now has concrete targets; coverage is partial across modules.
+- Architecture and decision docs exist but are not reviewed.
 
 Findings (Details)
-- Order book: `src/market/order_book/order_book.hpp` is a placeholder only.
-- Backtest: `src/backtest/replay_engine.hpp` and `src/backtest/replay_controller.hpp` declare skeletons without logic.
-- Execution: `src/execution/order_manager.hpp` and `src/execution/broker_adaptor.hpp` are interface-only.
-- Risk: `src/risk/risk.hpp` and `src/risk/limits.hpp` are interface-only.
-- Observability: `src/observability/logging.hpp`, `metrics.hpp`, `tracing.hpp` are interface-only.
-- Storage: `src/storage/schema.hpp` and `src/storage/snapshot_store.hpp` are schema/interface only.
-- Build: `src/*/CMakeLists.txt` define INTERFACE libraries, no concrete targets.
-- Docs: `docs/architecture.md` and `docs/decisions.md` are referenced but missing.
+- Order book: `src/market/order_book/order_book.cpp` provides L2 only; no L3 or snapshot/query API implementation.
+- Backtest: `src/backtest/replay_engine.cpp` and `src/backtest/replay_controller.cpp` implement minimal replay; no scheduling/filters.
+- Execution: `src/execution/order_manager.cpp` and `src/execution/broker_adaptor.cpp` are minimal in-memory stubs.
+- Risk: `src/risk/risk.cpp` and `src/risk/limits.cpp` are minimal checks and net limits.
+- Observability: `src/observability/*.cpp` are minimal stdout/in-memory implementations.
+- Storage: `src/storage/snapshot_store.cpp` is in-memory only.
+- Build: concrete targets exist for core/backtest/execution/risk/observability/storage/order_book.
+- Docs: `docs/architecture.md` and `docs/decisions.md` exist but are not reviewed.
 
 Implementation Checklist
 - [!] Order book implementation (L2/L3, updates, snapshot, query)

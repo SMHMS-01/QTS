@@ -1,6 +1,7 @@
 #pragma once
 
 #include "core/bus/event.hpp"
+#include "core/bus/event_bus.hpp"
 #include "strategy/portfolio.hpp"
 #include "strategy/strategy.hpp"
 
