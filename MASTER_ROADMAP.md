@@ -173,7 +173,7 @@ T6: Execution
 T7: Backtest and simulation
 - [x] T7.1: Deterministic clock
 - [x] T7.2: Event-driven replay
-- [ ] T7.3: PnL and metrics
+- [x] T7.3: PnL and metrics
 
 T8: Observability
 - [ ] T8.1: Logging

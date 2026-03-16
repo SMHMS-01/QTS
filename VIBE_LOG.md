@@ -125,3 +125,8 @@
   Task: T-024
   Summary: Add event-driven replay engine skeleton.
   Files: src/backtest/replay_engine.hpp, MASTER_ROADMAP.md
+- UUID: 62c61677-b633-4c25-8e68-3b4dfeccc970
+  Date: 2026-03-16
+  Task: T-025
+  Summary: Add PnL and metrics interface.
+  Files: src/backtest/pnl.hpp, MASTER_ROADMAP.md
