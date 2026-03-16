@@ -150,3 +150,8 @@
   Task: T-029
   Summary: Add storage schema types.
   Files: src/storage/schema.hpp, MASTER_ROADMAP.md
+- UUID: 640bfb02-35d8-4d79-a60e-0fb3393bbb34
+  Date: 2026-03-16
+  Task: T-030
+  Summary: Add snapshot persistence interface.
+  Files: src/storage/snapshot_store.hpp, MASTER_ROADMAP.md

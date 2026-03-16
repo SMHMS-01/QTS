@@ -182,7 +182,7 @@ T8: Observability
 
 T9: Storage
 - [x] T9.1: Data schema
-- [ ] T9.2: Snapshot persistence
+- [x] T9.2: Snapshot persistence
 
 Dependencies
 - T1 -> T2, T3, T4, T5, T6, T7
