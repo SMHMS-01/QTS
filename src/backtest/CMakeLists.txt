@@ -7,3 +7,5 @@ target_link_libraries(backtest PUBLIC core)
 
 add_executable(backtest_demo demo_main.cpp)
 target_link_libraries(backtest_demo PRIVATE backtest core)
+
+add_executable(min_backtest_demo min_backtest_demo.cpp)

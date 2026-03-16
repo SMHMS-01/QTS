@@ -220,3 +220,8 @@
   Task: T-043
   Summary: Add system_demo executable wiring core modules.
   Files: src/app/system_demo.cpp, src/CMakeLists.txt
+- UUID: f0192dd9-bcd0-4b7f-9776-3f98c2d6fa29
+  Date: 2026-03-16
+  Task: T-044
+  Summary: Add minimal backtest demo with in-memory data and PnL output.
+  Files: src/backtest/min_backtest_demo.cpp, src/backtest/CMakeLists.txt
