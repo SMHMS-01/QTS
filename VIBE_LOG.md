@@ -225,3 +225,8 @@
   Task: T-044
   Summary: Add minimal backtest demo with in-memory data and PnL output.
   Files: src/backtest/min_backtest_demo.cpp, src/backtest/CMakeLists.txt
+- UUID: 46ee6c0c-4ca9-45fb-bf88-5bf931d68225
+  Date: 2026-03-16
+  Task: T-045
+  Summary: Implement minimal end-to-end runnable path with normalization and PnL; add e2e demo.
+  Files: src/market/normalization/normalization.cpp, src/market/normalization/CMakeLists.txt, src/market/CMakeLists.txt, src/backtest/pnl.cpp, src/backtest/CMakeLists.txt, src/app/e2e_demo.cpp, src/CMakeLists.txt

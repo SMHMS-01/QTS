@@ -8,3 +8,6 @@ add_subdirectory(storage)
 
 add_executable(system_demo app/system_demo.cpp)
 target_link_libraries(system_demo PRIVATE backtest core order_book execution risk)
+
+add_executable(e2e_demo app/e2e_demo.cpp)
+target_link_libraries(e2e_demo PRIVATE backtest core order_book)
