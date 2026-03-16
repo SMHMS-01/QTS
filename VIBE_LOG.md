@@ -165,3 +165,8 @@
   Task: T-032
   Summary: Add compile-only tests for core modules and update test targets.
   Files: tests/CMakeLists.txt, tests/unit/core_headers_tests.cpp, tests/unit/risk_headers_tests.cpp, tests/unit/execution_headers_tests.cpp, tests/unit/observability_headers_tests.cpp, tests/unit/storage_headers_tests.cpp, tests/unit/backtest_headers_tests.cpp, tests/unit/strategy_headers_tests.cpp, tests/unit/market_headers_tests.cpp, MASTER_ROADMAP_IMPL.md
+- UUID: 183ae60b-04ae-48f0-91bd-ca9894c7adba
+  Date: 2026-03-16
+  Task: T-033
+  Summary: Add architecture/decisions docs and update README references.
+  Files: docs/architecture.md, docs/decisions.md, README.md, MASTER_ROADMAP_IMPL.md

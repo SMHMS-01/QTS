@@ -46,7 +46,7 @@ Implementation Checklist
 - [ ] Storage persistence backend
 - [!] Concrete build targets (libraries/executables)
 - [!] Minimal tests for core paths
-- [ ] Architecture and decision docs
+- [!] Architecture and decision docs
 
 Approval Notes
 - Update this file when concrete implementations land and are reviewed.
