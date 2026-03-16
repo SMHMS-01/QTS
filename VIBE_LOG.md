@@ -215,3 +215,8 @@
   Task: T-042
   Summary: Add order book L2 demo executable.
   Files: src/market/order_book/demo_main.cpp, src/market/order_book/CMakeLists.txt
+- UUID: 7199533f-d3e6-4948-bce0-889ee802b981
+  Date: 2026-03-16
+  Task: T-043
+  Summary: Add system_demo executable wiring core modules.
+  Files: src/app/system_demo.cpp, src/CMakeLists.txt

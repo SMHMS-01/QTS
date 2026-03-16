@@ -5,3 +5,6 @@ add_subdirectory(execution)
 add_subdirectory(risk)
 add_subdirectory(observability)
 add_subdirectory(storage)
+
+add_executable(system_demo app/system_demo.cpp)
+target_link_libraries(system_demo PRIVATE backtest core order_book execution risk)
