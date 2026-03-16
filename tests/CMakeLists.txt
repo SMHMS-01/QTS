@@ -1,1 +1,3 @@
-# Test targets will be added here.
+add_executable(order_book_tests unit/order_book_tests.cpp)
+target_link_libraries(order_book_tests PRIVATE order_book)
+add_test(NAME order_book_tests COMMAND order_book_tests)

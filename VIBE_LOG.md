@@ -155,3 +155,8 @@
   Task: T-030
   Summary: Add snapshot persistence interface.
   Files: src/storage/snapshot_store.hpp, MASTER_ROADMAP.md
+- UUID: 7a0e0c69-9a2a-4f1b-ba67-6741c7f8a91c
+  Date: 2026-03-16
+  Task: T-031
+  Summary: Add minimal L2 order book implementation, build target, and test; update implementation checklist.
+  Files: src/market/order_book/order_book.hpp, src/market/order_book/order_book.cpp, src/market/order_book/CMakeLists.txt, tests/CMakeLists.txt, tests/unit/order_book_tests.cpp, MASTER_ROADMAP_IMPL.md
