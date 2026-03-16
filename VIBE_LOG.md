@@ -135,3 +135,8 @@
   Task: T-026
   Summary: Add logging interface.
   Files: src/observability/logging.hpp, MASTER_ROADMAP.md
+- UUID: 1f261ccf-29e1-4dc4-ba73-06b1bb957a6f
+  Date: 2026-03-16
+  Task: T-027
+  Summary: Add metrics interface.
+  Files: src/observability/metrics.hpp, MASTER_ROADMAP.md

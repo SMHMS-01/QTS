@@ -177,7 +177,7 @@ T7: Backtest and simulation
 
 T8: Observability
 - [x] T8.1: Logging
-- [ ] T8.2: Metrics
+- [x] T8.2: Metrics
 - [ ] T8.3: Tracing
 
 T9: Storage
