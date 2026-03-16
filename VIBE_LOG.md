@@ -210,3 +210,8 @@
   Task: T-041
   Summary: Add backtest demo executable and update implementation findings.
   Files: src/backtest/demo_main.cpp, src/backtest/CMakeLists.txt, MASTER_ROADMAP_IMPL.md
+- UUID: 2a1fb662-6309-46cd-91bb-6d0b01f5f486
+  Date: 2026-03-16
+  Task: T-042
+  Summary: Add order book L2 demo executable.
+  Files: src/market/order_book/demo_main.cpp, src/market/order_book/CMakeLists.txt
