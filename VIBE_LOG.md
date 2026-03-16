@@ -180,3 +180,8 @@
   Task: T-035
   Summary: Add minimal execution implementations and build/test targets.
   Files: src/execution/order_manager.cpp, src/execution/broker_adaptor.cpp, src/execution/CMakeLists.txt, src/CMakeLists.txt, tests/unit/execution_tests.cpp, tests/CMakeLists.txt, MASTER_ROADMAP_IMPL.md
+- UUID: dfb527bd-ceb3-4eb7-805b-be73d41d659a
+  Date: 2026-03-16
+  Task: T-036
+  Summary: Add minimal risk implementations and build/test targets.
+  Files: src/risk/risk.cpp, src/risk/limits.cpp, src/risk/CMakeLists.txt, src/CMakeLists.txt, tests/unit/risk_tests.cpp, tests/CMakeLists.txt, MASTER_ROADMAP_IMPL.md
