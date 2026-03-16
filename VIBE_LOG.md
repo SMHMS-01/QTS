@@ -205,3 +205,8 @@
   Task: T-040
   Summary: Prepare repository for push: update gitignore and record build/test progress.
   Files: .gitignore, MASTER_ROADMAP.md, src/core/time/clock.hpp, VIBE_STATE.yaml
+- UUID: 27c1c1dd-a620-4fef-b591-4a795310013b
+  Date: 2026-03-16
+  Task: T-041
+  Summary: Add backtest demo executable and update implementation findings.
+  Files: src/backtest/demo_main.cpp, src/backtest/CMakeLists.txt, MASTER_ROADMAP_IMPL.md

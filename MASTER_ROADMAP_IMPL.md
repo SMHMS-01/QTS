@@ -29,7 +29,7 @@ Findings (High-Level)
 
 Findings (Details)
 - Order book: `src/market/order_book/order_book.cpp` provides L2 only; no L3 or snapshot/query API implementation.
-- Backtest: `src/backtest/replay_engine.cpp` and `src/backtest/replay_controller.cpp` implement minimal replay; no scheduling/filters.
+- Backtest: minimal replay plus demo executable (`backtest_demo`); no scheduling/filters.
 - Execution: `src/execution/order_manager.cpp` and `src/execution/broker_adaptor.cpp` are minimal in-memory stubs.
 - Risk: `src/risk/risk.cpp` and `src/risk/limits.cpp` are minimal checks and net limits.
 - Observability: `src/observability/*.cpp` are minimal stdout/in-memory implementations.
