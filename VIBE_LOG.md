@@ -230,3 +230,8 @@
   Task: T-045
   Summary: Implement minimal end-to-end runnable path with normalization and PnL; add e2e demo.
   Files: src/market/normalization/normalization.cpp, src/market/normalization/CMakeLists.txt, src/market/CMakeLists.txt, src/backtest/pnl.cpp, src/backtest/CMakeLists.txt, src/app/e2e_demo.cpp, src/CMakeLists.txt
+- UUID: ae06b608-35c8-4126-bbf7-22e70c61ca09
+  Date: 2026-03-16
+  Task: T-046
+  Summary: Wire payload flow, sequence guard, and assertions in e2e demo.
+  Files: src/app/e2e_demo.cpp
