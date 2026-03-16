@@ -160,3 +160,8 @@
   Task: T-031
   Summary: Add minimal L2 order book implementation, build target, and test; update implementation checklist.
   Files: src/market/order_book/order_book.hpp, src/market/order_book/order_book.cpp, src/market/order_book/CMakeLists.txt, tests/CMakeLists.txt, tests/unit/order_book_tests.cpp, MASTER_ROADMAP_IMPL.md
+- UUID: 710b5090-b8ad-49f1-beba-004538754ef9
+  Date: 2026-03-16
+  Task: T-032
+  Summary: Add compile-only tests for core modules and update test targets.
+  Files: tests/CMakeLists.txt, tests/unit/core_headers_tests.cpp, tests/unit/risk_headers_tests.cpp, tests/unit/execution_headers_tests.cpp, tests/unit/observability_headers_tests.cpp, tests/unit/storage_headers_tests.cpp, tests/unit/backtest_headers_tests.cpp, tests/unit/strategy_headers_tests.cpp, tests/unit/market_headers_tests.cpp, MASTER_ROADMAP_IMPL.md
