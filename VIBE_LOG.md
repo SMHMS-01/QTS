@@ -190,3 +190,8 @@
   Task: T-037
   Summary: Add minimal observability implementations and build/test targets.
   Files: src/observability/logging.cpp, src/observability/metrics.cpp, src/observability/tracing.cpp, src/observability/CMakeLists.txt, src/CMakeLists.txt, tests/unit/observability_tests.cpp, tests/CMakeLists.txt, MASTER_ROADMAP_IMPL.md
+- UUID: 0440177a-60a9-4eda-9e13-6d94e03e2827
+  Date: 2026-03-16
+  Task: T-038
+  Summary: Add minimal storage persistence implementation and build/test targets.
+  Files: src/storage/snapshot_store.cpp, src/storage/CMakeLists.txt, src/CMakeLists.txt, tests/unit/storage_tests.cpp, tests/CMakeLists.txt, MASTER_ROADMAP_IMPL.md

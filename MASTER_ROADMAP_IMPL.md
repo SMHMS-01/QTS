@@ -43,7 +43,7 @@ Implementation Checklist
 - [!] Execution implementation (order manager, broker adaptor)
 - [!] Risk implementation (pre-trade, post-trade)
 - [!] Observability backend (logging, metrics, tracing)
-- [ ] Storage persistence backend
+- [!] Storage persistence backend
 - [!] Concrete build targets (libraries/executables)
 - [!] Minimal tests for core paths
 - [!] Architecture and decision docs
