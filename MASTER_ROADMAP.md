@@ -181,7 +181,7 @@ T8: Observability
 - [x] T8.3: Tracing
 
 T9: Storage
-- [ ] T9.1: Data schema
+- [x] T9.1: Data schema
 - [ ] T9.2: Snapshot persistence
 
 Dependencies

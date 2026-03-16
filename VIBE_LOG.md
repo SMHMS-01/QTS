@@ -145,3 +145,8 @@
   Task: T-028
   Summary: Add tracing interface.
   Files: src/observability/tracing.hpp, MASTER_ROADMAP.md
+- UUID: 01e42391-5575-4f4a-995f-92acbf7d5029
+  Date: 2026-03-16
+  Task: T-029
+  Summary: Add storage schema types.
+  Files: src/storage/schema.hpp, MASTER_ROADMAP.md
