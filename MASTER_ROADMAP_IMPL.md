@@ -42,7 +42,7 @@ Implementation Checklist
 - [!] Backtest replay logic (deterministic clock integration)
 - [!] Execution implementation (order manager, broker adaptor)
 - [!] Risk implementation (pre-trade, post-trade)
-- [ ] Observability backend (logging, metrics, tracing)
+- [!] Observability backend (logging, metrics, tracing)
 - [ ] Storage persistence backend
 - [!] Concrete build targets (libraries/executables)
 - [!] Minimal tests for core paths

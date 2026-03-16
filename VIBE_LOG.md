@@ -185,3 +185,8 @@
   Task: T-036
   Summary: Add minimal risk implementations and build/test targets.
   Files: src/risk/risk.cpp, src/risk/limits.cpp, src/risk/CMakeLists.txt, src/CMakeLists.txt, tests/unit/risk_tests.cpp, tests/CMakeLists.txt, MASTER_ROADMAP_IMPL.md
+- UUID: 9d026878-0aec-4ac0-9dd0-f62b20fa5dd3
+  Date: 2026-03-16
+  Task: T-037
+  Summary: Add minimal observability implementations and build/test targets.
+  Files: src/observability/logging.cpp, src/observability/metrics.cpp, src/observability/tracing.cpp, src/observability/CMakeLists.txt, src/CMakeLists.txt, tests/unit/observability_tests.cpp, tests/CMakeLists.txt, MASTER_ROADMAP_IMPL.md
