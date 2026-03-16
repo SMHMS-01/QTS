@@ -8,6 +8,10 @@ Purpose
 - This file is the global architecture and dependency map for the project.
 - Before any micro-task, read this file to ensure local changes do not break global consistency.
 
+Completion Criteria
+- [x] currently means the spec/interface is defined and accepted.
+- Implementation status is tracked separately in MASTER_ROADMAP_IMPL.md.
+
 
 1. Goals and Non-Goals
 

@@ -200,3 +200,8 @@
   Task: T-039
   Summary: Fix include dependencies and verify build/tests; update implementation findings.
   Files: src/backtest/replay_engine.hpp, src/backtest/replay_controller.hpp, src/strategy/runner.hpp, src/core/CMakeLists.txt, src/market/order_book/CMakeLists.txt, src/backtest/CMakeLists.txt, src/execution/CMakeLists.txt, src/risk/CMakeLists.txt, src/observability/CMakeLists.txt, src/storage/CMakeLists.txt, tests/CMakeLists.txt, MASTER_ROADMAP_IMPL.md
+- UUID: 42b8264a-e54e-4229-8ffb-5a01e03a3078
+  Date: 2026-03-16
+  Task: T-040
+  Summary: Prepare repository for push: update gitignore and record build/test progress.
+  Files: .gitignore, MASTER_ROADMAP.md, src/core/time/clock.hpp, VIBE_STATE.yaml

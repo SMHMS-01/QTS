@@ -5,25 +5,25 @@
 namespace core::time {
 
 class Clock {
-public:
+ public:
   virtual ~Clock() = default;
   virtual TimePoint now() const = 0;
 };
 
 class SystemClock final : public Clock {
-public:
+ public:
   TimePoint now() const override;
 };
 
 class SimClock final : public Clock {
-public:
+ public:
   explicit SimClock(TimePoint start) : current_(start) {}
 
   TimePoint now() const override { return current_; }
   void set(TimePoint tp) { current_ = tp; }
 
-private:
+ private:
   TimePoint current_{};
 };
 
-} // namespace core::time
+}  // namespace core::time

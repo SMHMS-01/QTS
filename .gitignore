@@ -1,1 +1,12 @@
 .vscode/
+build/
+CMakeFiles/
+CMakeCache.txt
+CTestTestfile.cmake
+cmake_install.cmake
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+compile_commands.json
