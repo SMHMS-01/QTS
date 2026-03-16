@@ -115,3 +115,8 @@
   Task: T-022
   Summary: Add deterministic clock interface and implementation roadmap file.
   Files: src/backtest/deterministic_clock.hpp, MASTER_ROADMAP_IMPL.md
+- UUID: bf640849-a2e8-4557-8bbb-051fcb3205cc
+  Date: 2026-03-16
+  Task: T-023
+  Summary: Add event-driven replay engine skeleton.
+  Files: src/backtest/replay_engine.hpp, MASTER_ROADMAP_IMPL.md

@@ -1,0 +1,24 @@
+#pragma once
+
+#include "core/bus/event.hpp"
+#include "backtest/deterministic_clock.hpp"
+#include "market/feed/replay.hpp"
+
+namespace backtest {
+
+class ReplayEngine {
+public:
+  ReplayEngine(backtest::DeterministicClock* clock,
+               market::feed::ReplaySource* source,
+               core::bus::EventBus* bus)
+      : clock_(clock), source_(source), bus_(bus) {}
+
+  bool step();
+
+private:
+  backtest::DeterministicClock* clock_ = nullptr;
+  market::feed::ReplaySource* source_ = nullptr;
+  core::bus::EventBus* bus_ = nullptr;
+};
+
+} // namespace backtest
