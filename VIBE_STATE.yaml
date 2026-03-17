@@ -1,9 +1,0 @@
-# ================= SYSTEM STATE CONTROLLER =================
-session_id: "S-2026-0313"
-current_task:
-  id: "T-047"
-  intent: ""
-  constraints:
-  status: "PENDING"
-  write_files: ""
-  feedback: ""

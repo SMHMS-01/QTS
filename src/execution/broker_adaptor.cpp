@@ -2,26 +2,45 @@
 
 namespace execution {
 
-class BrokerAdaptor final : public IBrokerAdaptor {
-public:
-  bool connect() override {
-    connected_ = true;
-    return true;
+bool SimBrokerAdaptor::connect() {
+  connected_ = true;
+  return true;
+}
+
+void SimBrokerAdaptor::disconnect() {
+  connected_ = false;
+}
+
+OrderAck SimBrokerAdaptor::send_order(const OrderRequest& order) {
+  if (!connected_ || !manager_ || !book_) {
+    return {core::types::OrderId{0}, OrderStatus::Rejected};
   }
 
-  void disconnect() override { connected_ = false; }
+  auto ack = manager_->submit(order);
 
-  OrderAck send_order(const OrderRequest& order) override {
-    (void)order;
-    return {core::types::OrderId{0}, OrderStatus::New};
+  market::order_book::Level level{};
+  bool has_price = false;
+  if (order.side == OrderSide::Buy) {
+    has_price = book_->best_ask(level);
+  } else {
+    has_price = book_->best_bid(level);
   }
 
-  void cancel(core::types::OrderId) override {}
+  if (!has_price) {
+    return {ack.id, OrderStatus::Rejected};
+  }
 
-  void on_execution_report(const ExecutionReport&) override {}
+  OrderFill fill{ack.id, order.quantity, level.price};
+  manager_->on_fill(fill);
+  return {ack.id, OrderStatus::Filled};
+}
 
-private:
-  bool connected_ = false;
-};
+void SimBrokerAdaptor::cancel(core::types::OrderId id) {
+  if (manager_) {
+    manager_->cancel(id);
+  }
+}
+
+void SimBrokerAdaptor::on_execution_report(const ExecutionReport&) {}
 
 } // namespace execution

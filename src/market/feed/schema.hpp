@@ -10,7 +10,8 @@ namespace market::feed {
 enum class FeedMessageType : std::uint8_t {
   BookSnapshot,
   BookUpdate,
-  Trade
+  Trade,
+  DepthUpdate
 };
 
 struct FeedHeader {
@@ -45,6 +46,14 @@ struct Trade {
   core::types::PriceTicks price;
   core::types::QuantityLots quantity;
   bool is_buyer_maker = false;
+};
+
+struct DepthUpdate {
+  FeedHeader header;
+  bool is_snapshot = false;
+  bool is_bid = false;
+  core::types::PriceTicks price;
+  core::types::QuantityLots quantity;
 };
 
 } // namespace market::feed

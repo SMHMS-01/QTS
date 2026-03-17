@@ -13,6 +13,7 @@ bool ReplayEngine::step() {
 
   if (const auto* header = source_->peek_header()) {
     clock_->set(header->receive_time);
+    last_time_ = header->receive_time;
   }
 
   core::bus::Event event{};

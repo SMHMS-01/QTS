@@ -10,3 +10,4 @@ cmake_install.cmake
 *.dylib
 *.dll
 compile_commands.json
+data/raw/binance_delivery/

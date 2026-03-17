@@ -15,11 +15,13 @@ public:
       : clock_(clock), source_(source), bus_(bus) {}
 
   bool step();
+  core::time::TimePoint current_time() const { return last_time_; }
 
 private:
   backtest::DeterministicClock* clock_ = nullptr;
   market::feed::ReplaySource* source_ = nullptr;
   core::bus::EventBus* bus_ = nullptr;
+  core::time::TimePoint last_time_{};
 };
 
 } // namespace backtest

@@ -16,4 +16,11 @@ public:
   virtual void annotate(const Span& span, const std::string& key, const std::string& value) = 0;
 };
 
+class TracerImpl final : public ITracer {
+public:
+  Span start_span(const std::string& name) override;
+  void end_span(const Span& span) override;
+  void annotate(const Span& span, const std::string& key, const std::string& value) override;
+};
+
 } // namespace observability

@@ -250,3 +250,63 @@
   Task: T-049
   Summary: Document SequenceGuard assumption and harden DummySource bounds.
   Files: src/app/e2e_demo.cpp
+- UUID: 413bafc6-f1cf-4187-9d1e-a106a6a84da6
+  Date: 2026-03-16
+  Task: T-050
+  Summary: Add deterministic tests for order book, sequence guard, and snapshot store.
+  Files: src/storage/snapshot_store.hpp, src/storage/snapshot_store.cpp, tests/unit/order_book_tests.cpp, tests/unit/storage_tests.cpp, tests/unit/sequence_guard_tests.cpp, tests/CMakeLists.txt
+- UUID: bede6cf4-9494-48ab-a57f-8dd5ab6ae787
+  Date: 2026-03-16
+  Task: T-051
+  Summary: Wire observability into order book and PnL, expose console observability helpers, and integrate in e2e demo.
+  Files: src/observability/logging.hpp, src/observability/logging.cpp, src/observability/metrics.hpp, src/observability/metrics.cpp, src/observability/tracing.hpp, src/observability/tracing.cpp, src/market/order_book/order_book.hpp, src/market/order_book/order_book.cpp, src/backtest/pnl.hpp, src/backtest/pnl.cpp, src/app/e2e_demo.cpp
+- UUID: d38db59f-ab8a-4232-b7f1-828f07c6d7bc
+  Date: 2026-03-16
+  Task: T-052
+  Summary: Add CSV replay source with symbol/time normalization utilities and a demo wired to real data input.
+  Files: src/market/normalization/symbol_map.hpp, src/market/normalization/symbol_map.cpp, src/market/normalization/normalization.hpp, src/market/normalization/CMakeLists.txt, src/market/feed/binance_depth_csv.hpp, src/app/binance_replay_demo.cpp, src/CMakeLists.txt, docs/binance_depth_csv.md, data/raw/binance_depth_sample.csv, MASTER_ROADMAP_IMPL.md
+- UUID: 26a60c0d-1a74-4123-b5a6-6defae3c3d25
+  Date: 2026-03-16
+  Task: T-053
+  Summary: Implement SimBrokerAdaptor and expose OrderManager for paper trading fills.
+  Files: src/execution/order_manager.hpp, src/execution/order_manager.cpp, src/execution/broker_adaptor.hpp, src/execution/broker_adaptor.cpp, MASTER_ROADMAP_IMPL.md
+- UUID: 71f6abfd-bbff-4a9f-8881-3191c8c26325
+  Date: 2026-03-16
+  Task: T-054
+  Summary: Mark deterministic order book, sequence guard, and snapshot store tests as completed in implementation ledger.
+  Files: MASTER_ROADMAP_IMPL.md
+- UUID: a84a4940-198f-4742-8279-325f2981de22
+  Date: 2026-03-16
+  Task: T-055
+  Summary: Add Tardis incremental book L2 replay support, wire real data into e2e demo, and validate best bid/ask on Binance historical data.
+  Files: src/market/feed/schema.hpp, src/market/feed/tardis_incremental_book_l2_csv.hpp, src/app/e2e_demo.cpp, src/CMakeLists.txt, docs/tardis_binance_delivery_incremental_book_l2.md, MASTER_ROADMAP_IMPL.md
+- UUID: 0829f7ad-8630-47cf-b579-156137276a9c
+  Date: 2026-03-16
+  Task: T-056
+  Summary: Auto-detect Tardis CSV format in binance_replay_demo and report parse errors; validate replay with real data.
+  Files: src/app/binance_replay_demo.cpp
+- UUID: b28f8f39-b4e7-4226-9320-d09df10c1d7f
+  Date: 2026-03-17
+  Task: T-057
+  Summary: Add order book depth/imbalance queries and a baseline imbalance backtest demo with metrics.
+  Files: src/market/order_book/order_book.hpp, src/market/order_book/order_book.cpp, src/app/imbalance_backtest_demo.cpp, src/CMakeLists.txt
+- UUID: c7c11b71-ce71-446b-90a9-e0b067ab450d
+  Date: 2026-03-17
+  Task: T-058
+  Summary: Fix backtest unit scaling, add fee model, and emit debug signal traces for validation.
+  Files: src/app/imbalance_backtest_demo.cpp
+- UUID: fb954e37-5700-4792-8241-d85e7f9da99d
+  Date: 2026-03-17
+  Task: T-059
+  Summary: Add time-based decision gating, minimum hold, and signal confirmation; expose ReplayEngine current time.
+  Files: src/backtest/replay_engine.hpp, src/backtest/replay_engine.cpp, src/app/imbalance_backtest_demo.cpp
+- UUID: 49754084-6ecb-4c00-84f1-4ac40c90a886
+  Date: 2026-03-17
+  Task: T-060
+  Summary: Document scheduling flow and add SVG diagram.
+  Files: docs/scheduling.svg, docs/architecture.md
+- UUID: 7f650c17-253a-4c1a-895f-03426b1705f9
+  Date: 2026-03-17
+  Task: T-061
+  Summary: Prepare repository for push with data ignore rule and updated state/log.
+  Files: .gitignore, VIBE_LOG.md, VIBE_STATE.md

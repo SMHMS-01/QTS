@@ -34,3 +34,12 @@ This project is a modular C++23 quant trading system. The architecture is layere
 ## Build and Test
 - CMake + Ninja, C++23.
 - Minimal compile tests for module headers and a basic L2 order book test.
+
+## Scheduling (Current Implementation)
+The current runtime scheduling is event-driven with a deterministic replay loop:
+- `ReplaySource` produces market data events.
+- `ReplayEngine::step()` advances the clock and publishes events to `EventBus`.
+- `OrderBookSink` consumes market data events and updates `OrderBookL2`.
+- The backtest decision loop samples the book at a fixed interval, applies confirmation/hold rules, and updates PnL.
+
+![Scheduling](scheduling.svg)

@@ -1,50 +1,70 @@
 #include "observability/metrics.hpp"
 
-#include <unordered_map>
+#include <iostream>
 
 namespace observability {
 
-namespace {
+CounterImpl::CounterImpl(std::string name) : name_(std::move(name)) {}
 
-class CounterImpl final : public Counter {
-public:
-  void inc(double value = 1.0) override { value_ += value; }
-  double value() const { return value_; }
+void CounterImpl::inc(double value) {
+  value_ += value;
+  if (!name_.empty()) {
+    std::cout << "[METRIC] " << name_ << "=" << value_ << "\n";
+  }
+}
 
-private:
-  double value_ = 0.0;
-};
+GaugeImpl::GaugeImpl(std::string name) : name_(std::move(name)) {}
 
-class GaugeImpl final : public Gauge {
-public:
-  void set(double value) override { value_ = value; }
-  double value() const { return value_; }
+void GaugeImpl::set(double value) {
+  value_ = value;
+  if (!name_.empty()) {
+    std::cout << "[METRIC] " << name_ << "=" << value_ << "\n";
+  }
+}
 
-private:
-  double value_ = 0.0;
-};
+HistogramImpl::HistogramImpl(std::string name) : name_(std::move(name)) {}
 
-class HistogramImpl final : public Histogram {
-public:
-  void observe(double value) override { last_ = value; }
-  double last() const { return last_; }
+void HistogramImpl::observe(double value) {
+  last_ = value;
+  if (!name_.empty()) {
+    std::cout << "[METRIC] " << name_ << "=" << last_ << "\n";
+  }
+}
 
-private:
-  double last_ = 0.0;
-};
+Counter& MetricsRegistry::counter(const std::string& name) {
+  return counters_[name];
+}
 
-} // namespace
+Gauge& MetricsRegistry::gauge(const std::string& name) {
+  return gauges_[name];
+}
 
-class MetricsRegistry final : public IMetrics {
-public:
-  Counter& counter(const std::string& name) override { return counters_[name]; }
-  Gauge& gauge(const std::string& name) override { return gauges_[name]; }
-  Histogram& histogram(const std::string& name) override { return histograms_[name]; }
+Histogram& MetricsRegistry::histogram(const std::string& name) {
+  return histograms_[name];
+}
 
-private:
-  std::unordered_map<std::string, CounterImpl> counters_;
-  std::unordered_map<std::string, GaugeImpl> gauges_;
-  std::unordered_map<std::string, HistogramImpl> histograms_;
-};
+Counter& StdoutMetrics::counter(const std::string& name) {
+  auto it = counters_.find(name);
+  if (it == counters_.end()) {
+    it = counters_.emplace(name, CounterImpl{name}).first;
+  }
+  return it->second;
+}
+
+Gauge& StdoutMetrics::gauge(const std::string& name) {
+  auto it = gauges_.find(name);
+  if (it == gauges_.end()) {
+    it = gauges_.emplace(name, GaugeImpl{name}).first;
+  }
+  return it->second;
+}
+
+Histogram& StdoutMetrics::histogram(const std::string& name) {
+  auto it = histograms_.find(name);
+  if (it == histograms_.end()) {
+    it = histograms_.emplace(name, HistogramImpl{name}).first;
+  }
+  return it->second;
+}
 
 } // namespace observability

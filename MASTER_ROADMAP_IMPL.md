@@ -48,6 +48,15 @@ Implementation Checklist
 - [!] Minimal tests for core paths
 - [!] Architecture and decision docs
 
+Integration Priorities (from review feedback)
+- [x] End-to-end minimal runnable path: replay -> normalization -> order_book -> strategy -> pnl output
+- [x] Deterministic order_book correctness tests with known L2 snapshots + updates
+- [x] sequence_guard tests for out-of-order and missing updates
+- [x] snapshot_store save/load roundtrip validation
+- [x] Runtime observability wiring: order_book structured logs + pnl metrics output
+- [x] Replace dummy replay source with real historical dataset (e.g., depth snapshots + diffs)
+- [!] SimBrokerAdaptor for paper trading (signal -> order -> fill -> position -> pnl)
+
 Approval Notes
 - Update this file when concrete implementations land and are reviewed.
 - Use [!] when code exists but review is pending.

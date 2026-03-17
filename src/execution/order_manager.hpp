@@ -1,6 +1,7 @@
 #pragma once
 
 #include <cstdint>
+#include <unordered_map>
 
 #include "core/types/types.hpp"
 
@@ -49,6 +50,22 @@ public:
   virtual OrderAck submit(const OrderRequest& order) = 0;
   virtual void cancel(core::types::OrderId id) = 0;
   virtual void on_fill(const OrderFill& fill) = 0;
+};
+
+class OrderManager final : public IOrderManager {
+public:
+  OrderAck submit(const OrderRequest& order) override;
+  void cancel(core::types::OrderId id) override;
+  void on_fill(const OrderFill& fill) override;
+
+private:
+  struct OrderState {
+    OrderStatus status = OrderStatus::New;
+    core::types::QuantityLots remaining;
+  };
+
+  std::uint64_t next_id_ = 1;
+  std::unordered_map<std::uint64_t, OrderState> orders_;
 };
 
 } // namespace execution
